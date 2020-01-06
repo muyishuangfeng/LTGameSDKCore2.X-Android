@@ -1,0 +1,1 @@
+# LTGameSDKCore2.X-Android
