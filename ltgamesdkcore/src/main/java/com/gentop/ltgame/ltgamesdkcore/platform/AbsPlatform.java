@@ -42,6 +42,19 @@ public abstract class AbsPlatform implements IPlatform {
         mTarget = target;
     }
 
+    public AbsPlatform(Context context, String appId, String appKey, int target) {
+        mAppId = appId;
+        mAppKey = appKey;
+        mTarget = target;
+    }
+
+    public AbsPlatform(Context context, String appId, String appKey, int payTest, int target) {
+        mAppId = appId;
+        mAppKey = appKey;
+        mPayTest = payTest;
+        mTarget = target;
+    }
+
     public AbsPlatform(Context context, String appId, String appKey, int payTest, String publicKey,
                        int selfRequestCode, String sku, String productID, Map<String, Object> params,
                        String payType, int target) {
