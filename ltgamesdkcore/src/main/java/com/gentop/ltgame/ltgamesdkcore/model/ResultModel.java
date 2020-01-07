@@ -13,6 +13,10 @@ public class ResultModel {
     private String lt_order_id;
     //类型
     private String lt_type;
+    //单位
+    private String lt_currency;
+    //价格
+    private double lt_price;
 
 
     public String getAuth_code() {
@@ -63,6 +67,22 @@ public class ResultModel {
         this.lt_type = lt_type;
     }
 
+    public String getLt_currency() {
+        return lt_currency;
+    }
+
+    public void setLt_currency(String lt_currency) {
+        this.lt_currency = lt_currency;
+    }
+
+    public double getLt_price() {
+        return lt_price;
+    }
+
+    public void setLt_price(double lt_price) {
+        this.lt_price = lt_price;
+    }
+
     @Override
     public String toString() {
         return "ResultModel{" +
@@ -72,6 +92,8 @@ public class ResultModel {
                 ", lt_uid_token='" + lt_uid_token + '\'' +
                 ", lt_order_id='" + lt_order_id + '\'' +
                 ", lt_type='" + lt_type + '\'' +
+                ", lt_currency='" + lt_currency + '\'' +
+                ", lt_price=" + lt_price +
                 '}';
     }
 }
