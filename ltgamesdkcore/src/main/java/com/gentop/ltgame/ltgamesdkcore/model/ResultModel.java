@@ -1,6 +1,8 @@
 package com.gentop.ltgame.ltgamesdkcore.model;
 
-public class ResultModel {
+import java.io.Serializable;
+
+public class ResultModel implements Serializable {
     //验证码
     private String auth_code;
     //乐推UID
