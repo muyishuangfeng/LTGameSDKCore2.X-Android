@@ -25,6 +25,7 @@ public class LoginObject {
     private String mLoginCode;//登录状态码
     private String qqAppID;//qqAppID
     private String guestType;//游客登录类型
+    private boolean mStats;//统计
 
     public String getScope() {
         return scope;
@@ -176,5 +177,13 @@ public class LoginObject {
 
     public void setGuestType(String guestType) {
         this.guestType = guestType;
+    }
+
+    public boolean getStats() {
+        return mStats;
+    }
+
+    public void setStats(boolean mStats) {
+        this.mStats = mStats;
     }
 }

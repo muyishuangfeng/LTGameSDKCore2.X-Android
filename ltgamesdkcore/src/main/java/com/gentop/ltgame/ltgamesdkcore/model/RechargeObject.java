@@ -30,6 +30,8 @@ public class RechargeObject {
     private String goodsID;
     //商品类型
     private String mGoodsType;
+    //统计
+    private boolean mStats;
 
     public String getLTAppID() {
         return LTAppID;
@@ -47,19 +49,19 @@ public class RechargeObject {
         this.LTAppKey = LTAppKey;
     }
 
-    public String getmPackageID() {
+    public String getPackageID() {
         return mPackageID;
     }
 
-    public void setmPackageID(String mPackageID) {
+    public void setPackageID(String mPackageID) {
         this.mPackageID = mPackageID;
     }
 
-    public String getmAdID() {
+    public String getAdID() {
         return mAdID;
     }
 
-    public void setmAdID(String mAdID) {
+    public void setAdID(String mAdID) {
         this.mAdID = mAdID;
     }
 
@@ -120,11 +122,19 @@ public class RechargeObject {
         this.goodsID = goodsID;
     }
 
-    public String getmGoodsType() {
+    public String getGoodsType() {
         return mGoodsType;
     }
 
-    public void setmGoodsType(String mGoodsType) {
+    public void setGoodsType(String mGoodsType) {
         this.mGoodsType = mGoodsType;
+    }
+
+    public boolean getStats() {
+        return mStats;
+    }
+
+    public void setStats(boolean mStats) {
+        this.mStats = mStats;
     }
 }
